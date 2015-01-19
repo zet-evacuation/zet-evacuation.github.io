@@ -1,0 +1,23 @@
+{
+  "name": "zet-website",
+  "version": "0.1.0",
+  "description": "ZET Evacuation Tool Website",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zet-evacuation/zet-evacuation.github.io.git"
+  },
+  "author": "Jan-Philipp Kappmeier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zet-evacuation/zet-evacuation.github.io/issues"
+  },
+  "homepage": "https://github.com/zet-evacuation/zet-evacuation.github.io",
+  "devDependencies": {
+    "grunt": ">=0.4.0",
+    "grunt-contrib-cssmin": "^0.11.0"
+  }
+}
