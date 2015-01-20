@@ -10,20 +10,20 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ base }}css/bootstrap.min.css">
         <style>
             body {
                 padding-top: 50px;
                 /* padding-bottom: 20px; */ /* edited */
             }
         </style>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{{ base }}css/bootstrap-theme.min.css">
 
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="{{ base }}js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         
         <!-- Added new font for icons -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/main.min.css">
+        <link rel="stylesheet" href="{{ base }}css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ base }}css/main.min.css">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -39,10 +39,20 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>-->
-          <a class="navbar-brand" href="index.html">ZET</a>
-          <a class="navbar-brand" href="downloads.html">Downloads</a>
-          <a class="navbar-brand" href="icem.html">ICEM</a>
         </div>
+          <div class="navbar-left">
+            <a class="navbar-brand" href="index.html">ZET</a>
+            <a class="navbar-brand" href="downloads.html">Downloads</a>
+            <a class="navbar-brand" href="icem.html">ICEM</a>
+          </div>
+          <div class="navbar-right">
+            {{#is lang "en"}}
+              <a href="{{base}}{{filename}}"><img src="{{ base }}image/flag/ger.png"/ style="max-height: 20px; margin-top:14px;"></a>
+            {{else}}
+              <a href="{{base}}en/{{filename}}"><img src="{{ base }}image/flag/gb.png"/ style="max-height: 20px; margin-top:14px;"></a>
+            {{/is}}
+          </div>
+
         <!-- introduces elements that hide when becomes small -->
         <!--<div id="navbar" class="navbar-collapse collapse"> brings in a collapse field on small displays like cell phones
           <a class="navbar-brand" href="index.html">ZET</a>
@@ -62,7 +72,7 @@
     </nav>
 
 	<div class="content">
-	
+  
   {{> body }}
 	
   </div>
@@ -95,11 +105,11 @@
     
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="{{ base }}js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
 
-        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="{{ base }}js/vendor/bootstrap.min.js"></script>
 
-        <script src="js/main.js"></script>
+        <script src="{{ base }}js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

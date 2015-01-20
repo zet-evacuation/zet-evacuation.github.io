@@ -20,7 +20,8 @@ module.exports = function(grunt) {
         },
         pages: {
             files: {
-                './': ['src/pages/*.hbs']
+                './': ['src/pages/*.hbs'],
+                'en/': ['src/pages/en/*.hbs']
             }
         }
     }

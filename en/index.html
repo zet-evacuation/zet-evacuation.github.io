@@ -10,20 +10,20 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <style>
             body {
                 padding-top: 50px;
                 /* padding-bottom: 20px; */ /* edited */
             }
         </style>
-        <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
 
-        <script src="./js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="../js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         
         <!-- Added new font for icons -->
-        <link rel="stylesheet" href="./css/font-awesome.min.css">
-        <link rel="stylesheet" href="./css/main.min.css">
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/main.min.css">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -47,7 +47,7 @@
           </div>
           <div class="navbar-right">
             
-              <a href="./en/index.html"><img src="./image/flag/gb.png"/ style="max-height: 20px; margin-top:14px;"></a>
+              <a href="../index.html"><img src="../image/flag/ger.png"/ style="max-height: 20px; margin-top:14px;"></a>
             
           </div>
 
@@ -76,14 +76,14 @@
   <div class="jumbotron">
     <div class="container">
       <div>
-        <h1 style="float:left">ZET Evakuierungstool</h1>
-        <img src="./image/logo-complete.png" style="float:right" width="30%"/>
+        <h1 style="float:left">ZET Evacuation Tool</h1>
+        <img src="../image/logo-complete.png" style="float:right" width="30%"/>
         <div style="clear: both;padding-bottom:40px"></div>
       </div>
 
-      <p>Das Softwaretool ZET, das als freie Software unter der <a href="#">GPL</a> lizensiert ist, ermöglicht es, Evakuierungsszenarios zu modellieren, simulieren und zu optimieren. Dabei können mehrgeschossige Gebäude modelliert, Menschen verteilt und (Not)Ausgänge zugewiesen werden.</p>
+      <p>The ZET softwaretools, which is licensed under the <a href="#">GPL</a>. allows to model evacuation scenarios and simulate and optimze them. Within ZET multi-storey buildings can be designed and residents can be placed and emergency exits can be assigned to them.</p>
 
-  <p>Ein berechneter Earliest-Arrival-Fluss führt die Menschen zu den besten Ausgängen (im Sinne einer möglichst schnellen Evakuierung des Gebäudes). Da die Berechnung mittels dynamischer Flüsse einige idealistische Annahmen macht, kann auch eine Simulation durchgeführt werden. Eine fortgeschrittene Visualisierung und eine Statistik runden das Paket ab und erlauben die Analyse der Daten.</p>
+  <p>An earliest arrival flow is then computed to route the residents to the best exits. Since the flow computation has to make certain idealistic assumptions, the included simulation can then be used to test the computed evacuation paths. A wide selection of statistics and an advanced visualizer help to analyze the data.</p>
       <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
   </div>
   </div>
@@ -93,18 +93,18 @@
   <h2 style="color:#fff;">Editor</h2>
   <div class="row">
       <div class="col-md-8">
-        <p>ZET enthält einen integrierten Editor mit dem Evakuierungsszenarios modelliert werden können. Mit dem Editor ist es möglich, verschiedene Etagen, Räume auf den Etagen und spezielle Gebiete innerhalb der Räume zu erzeugen. Die Gebiete können dabei eine spezielle Semantik zugewiesen bekommen, wie z.&thinsp;B. sicherer Ort. Alle Räume und Gebiete werden von beliebigen geschlossenen Polynomen dargestellt.</p>
+        <p> ZET has an integrated editor that can be used to design the evacuation scenarios. With this editor it is possible to create various floors, rooms on the floors and specialized areas within the rooms that have additional semantics. All rooms and areas can be arbitrary closed polygons.</p>
       </div>
       <div class="col-md-4">
-    <img width="100%" src="./image/content/ger/introduction_hauptbildschirm.png"/>
+    <img width="100%" src="../image/content/eng/introduction_hauptbildschirm.png"/>
       </div>
 </div>
 <div class="row top-buffer">
       <div class="col-md-8">
-        <p>Die zu Evakuierenden Personen können automatisch in sogenannte Belegungsgebiete verteilt werden. Die Personen können dabei in verschiedene Gruppen mit unterschiedlichen Eigenschaften aufgeteilt werden. Die Eigenschaften und Gruppen können mit dem Belegungseditor verändert werden. Jede Eigenschaft kann dabei mit einer Wahrscheinlichkeitsverteilung angepasst werden.</p>
+        <p> The evacuees can be automatically set in so called "assignment areas". The residents can be divided into groups that have different properties. The properties and groups can be edited in the assignment editor, the adjustment of the properties is done by several property distributions.</p>
       </div>
       <div class="col-md-4">
-    <img width="100%" src="./image/content/ger/introduction_belegungseditor.png"/>
+    <img width="100%" src="../image/content/eng/introduction_belegungseditor.png"/>
       </div>
 </div>
       <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
@@ -116,17 +116,18 @@
     <div class="container">
   <div class="col-md-12">
     <h2>Visualisierung</h2>
-        <p>Sowohl die Simulation mit einem zellulären Automaten als auch der berechnete Netzwerkfluss können in 3D mittels OpenGL visualisiert werden. Die Kamera ist dabei mit den üblichen Maus- und Tastaturkommandos steuerbar. Innerhalb der Visualisierung sind verschiedene Informationen zugänglich, wie zum Beispiel die Ausnutzung bestimmter Gebiete. Die Visualisierung kann in perspektivischer Sichtweise oder in isometrischer und orthognaler Projektion dargestellt werden.</p>
+        <p> Both, the simulaton on a cellular automaton and the calculated network flow can be visualized in 3d using OpenGL. The position of the camera inside the visualization is completely controllable using the normal mouse and keyboard controls. Within the visualization various information can be accessed, such as for example the utilization of areas.
+The visualization can be viewed in perspective view, isometric view and orthogonal projection.</p>
   </div>
   
       <div class="col-md-4">
-    <img width="100%" src="./image/content/introduction_visualization_isom.png"/>
+    <img width="100%" src="../image/content/introduction_visualization_isom.png"/>
       </div>
       <div class="col-md-4">
-    <img width="100%" src="./image/content/introduction_visualization_orthogonal.png"/>
+    <img width="100%" src="../image/content/introduction_visualization_orthogonal.png"/>
       </div>
       <div class="col-md-4">
-    <img width="100%" src="./image/content/introduction_visualization_perspective.png"/>
+    <img width="100%" src="../image/content/introduction_visualization_perspective.png"/>
       </div>
 
   </div>
@@ -138,7 +139,7 @@
   
   <p><a href="http://www.coga.tu-berlin.de/fileadmin/i26/download/AG_DiskAlg/FG_KombOptGraphAlg/kappmeier/ZET_PG_Current/zet-1.0.3a-update.rar"><span class="fa fa-download"></span> <span>ZET 1.0.3a</span> Suite für Java 6</a>. <span class="small">(md5: 73e7515d14a42ee9257ea6f8444d7be7)</span></p>
   
-  <p>Andere Versionen, Signaturen und Quellcodes gibt es bei den <a href="downloads.html">Downloads</a>.</p>
+  <p>Other versions, signatures and the source code are available in the <a href="downloads.html">Downloads</a> section.</p>
    <!--<p>ZET ist in Java geschrieben und Die aktuelle Version 1.0.3 von ZET kann hier, zusammen mit Signaturdateien, heruntergeladen werden, ZET wird als kompiliertes Java(TM)-Paket verteilt und benötigt mindestens Java 6.0. Der Quellcode von ZET ist auf sourceforge verfügbar. Auf die aktuellste Version des Quellcodes kann direkt über das SVN-Repository zugegriffen werden.</p>
 
 <p>Die Download-Datei wurde mit dem öffentlichen Schlüssel (ASC, 2,5 KB) von ZET signiert.</p>
@@ -179,11 +180,11 @@
     
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         
-        <script>window.jQuery || document.write('<script src="./js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
 
-        <script src="./js/vendor/bootstrap.min.js"></script>
+        <script src="../js/vendor/bootstrap.min.js"></script>
 
-        <script src="./js/main.js"></script>
+        <script src="../js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

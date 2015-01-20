@@ -1,0 +1,53 @@
+﻿---
+title: ZET Evacuation Tool - Downloads
+base: ../
+lang: en
+---
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+  <div class="container">
+    <h1>Downloads</h1>
+
+     <p>The current version 1.0.3 of the software ZET can be downloaded here, including signature files. ZET is distributed as compiled Java(TM) package and needs at least Java 6.0. The source code of ZET is available from <a href="http://sourceforge.net/projects/zet-evacuation/">sourceforge</a>. The latest version of the source code can be directly accessed via the <a href="https://zet-evacuation.svn.sourceforge.net/svnroot/zet-evacuation/zet">SVN-Repository</a>.</p>
+
+    <p>The program file is signed using the <a href="http://www.coga.tu-berlin.de/fileadmin/i26/Bilder_Webseite/AG_DiskAlg/FG_KombOptGraphAlg/public_keys/zet_evakuierung.asc">public key</a> of zet.</p>
+
+    <p>Thel atest version of zet is due to 06.&thinsp;01.&thinsp;2010. The download contains the program including some example files.</p>
+
+    <h2>Current version: ZET 1.0.3a</h2>
+    <table class="table table-striped">
+      <tr><th>Download</th><th>Beschreibung</th><th>Signatures</th><th>Größe</th><th>Typ</th></tr>
+      <tr><td><a href="http://www.coga.tu-berlin.de/fileadmin/i26/download/AG_DiskAlg/FG_KombOptGraphAlg/kappmeier/ZET_PG_Current/zet-1.0.3a.rar">ZET 1.0.3a</a></td><td>The complete ZET Suite including libraries, examples and all necessary files.</td><td>md5: 73e7515d14a42ee9257ea6f8444d7be7<br/><a href="http://www.coga.tu-berlin.de/fileadmin/i26/download/AG_DiskAlg/FG_KombOptGraphAlg/kappmeier/ZET_PG_Current/zet-1.0.3a.rar.asc">GPG/PGP</a></td><td>9,64 MiB</td><th>rar</th></tr>
+      <tr><td><a href="http://www.coga.tu-berlin.de/fileadmin/i26/download/AG_DiskAlg/FG_KombOptGraphAlg/kappmeier/ZET_PG_Current/zet-1.0.3a-update.rar">ZET 1.0.3a Update</a></td><td>Only program executables for an upgrade from version 1.0.3. The file from the former installation has to be replaced.</td><td>md5: 4bbf3b57c280719bf971788e63684d33<br/><a href="http://www.coga.tu-berlin.de/fileadmin/i26/download/AG_DiskAlg/FG_KombOptGraphAlg/kappmeier/ZET_PG_Current/zet-1.0.3a-update.rar.asc">GPG/PGP</a></td><td>1,20 MiB</td><th>rar</th></tr>
+      <tr><td><a href="http://www.coga.tu-berlin.de/fileadmin/i26/download/AG_DiskAlg/FG_KombOptGraphAlg/kappmeier/ZET_PG_Current/handbuch_zet.pdf">Manual (in german)</a></td><td></td><td></td><td>2,45</td><th>pdf</th></tr>
+      <tr><td>Sourcecode</td><td></td><td></td><td></td><th>rar</th></tr>
+    </table>
+  </div>
+</div>
+  
+<div class="jumbotron">
+  <div class="container">
+    <h2>Installation und execution of ZET</h2>
+    <p>ZET is released as a Java package in a jar file. It suffices to extract the rar file into an arbitrary directory, e.g. on Windows machines into <code>C:\Applications</code>. As ZET is capable of running out of the home directory it is not necessary to have administrator privilegues. The release package contains all needed libraries. The system depending libraries used for 3d visualization using OpenGL are contained in different versions for MacOS, Linux and Windows. ZET is, with exception of the OpenGL system libraries, completely written in Java and needs at least Java Version 6. The current version of Java can be downloaded at the <a href="http://java.com/download">Java download page</a>.</p>
+
+    <p>The program is stored in the jar file zet.jar, which cannot be startet directly as the path to the system depending libraries has to be set. These files are stored in directories of the form /lib/jogl-system-architecture. The following table shows the correct parameter for supported systems:</p>
+
+    <table class="table table-striped">	
+      <tr><th>Betriebssystem</th><th>Kommandozeilenaufruf</th></tr>
+      <tr><td>Linux 32 bit</td><td><code>java -Djava.library.path="lib/jogl/linux-i586/" -jar zet.jar</code></td></tr>
+      <tr><td>Linux 64 bit</td><td><code>java -Djava.library.path="lib/jogl/linux-amd64/" -jar zet.jar</code></td></tr>
+      <tr><td>MacOS Power PC</td><td><code>java -Djava.library.path="lib/jogl/macosx-ppc/" -jar zet.jar</code></td></tr>
+      <tr><td>MacOS Universal 32 bit<br/><span class="small">(Benötigt Java 6)</span></td><td><code>java -Djava.library.path="lib/jogl/macosx-univ/" -jar zet.jar</code></td></tr>
+      <tr><td>MacOS Universal 64 bit<br/><span class="small">((Works under Mac OS 10.6 only as before no Java 6 was provided)</span></td><td><code>java -Djava.library.path="lib/jogl/macosx-univ/" -d32 -jar zet.jar</code></td></tr>
+      <tr><td>Windows 32 bit</td><td><code>java -Djava.library.path="lib/jogl/windows-i586/" -jar zet.jar</code></td></tr>
+      <tr><td>Windows 64 bit</td><td><code>java -Djava.library.path="lib/jogl/windows-amd64/" -jar zet.jar</code></td></tr>
+    </table>
+
+    <h4>Simple start using scripts</h4>
+
+    <p>On Windows systems, the batch files <code>zet32.bat</code> and <code>zet64.bat</code> call the version for 32 bit intel systems and amd64 systems, respectively.
+The executable files <code>zet32.exe</code> and <code>zet64.exe</code> call a version of the Java interpreter that hides the default output and is recommended to use if no debug information is needed. Both executables take the same command line parameter as the .jar file.</p>
+
+    <p>For Linux systems the shell scripts <code>zet32.sh</code> and <code>zet64.sh</code> start the application in 32-bit mode and 64-bit mode, respectiveley.</p>
+  </div>
+</div>

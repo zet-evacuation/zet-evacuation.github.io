@@ -1,5 +1,6 @@
 ﻿---
 title: ZET Evacuation Tool - Downloads
+base: ./
 ---
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
@@ -23,7 +24,7 @@ title: ZET Evacuation Tool - Downloads
           <p>Es ist leicht zu erkennen, dass nach 15 Sekunden die bei Verwendung der Kürzeste-Wege-Strategie deutlich mehr Personen vor dem engen Ausgang auf der rechten Seite stehen und dadurch die Evakuierungszeit erhöhen. Die anderen Ansätze liefern bessere Resultate.</p>
         </div>
         <div class="col-md-4">      
-          <img src="image/content/icem09/exit-assignments-experiments-introduction-results.svg" width="100%"/>
+          <img src="image/content/icem09/exit-assignments-experiments-introduction-results.png" width="100%"/>
         </div>
       </div>
 
@@ -90,10 +91,13 @@ title: ZET Evacuation Tool - Downloads
 <div class="jumbotron highlight">
   <div class="container">
     <h3>Ein schlechtes Beispiel für Minkosten-Flüsse 2: geteilte Engpässe</h3>
-    <div class="col-md-12">
+    <div class="col-md-8">
       <p>In diesem Szenario ist es schlecht, kürzeste Wege zu wählen, da die Kapazität der Ausgänge auf der linken Seite nur ein Drittel der Kapazität der rechten seite umfasst. Da der Engpass nicht selbst der Ausgang ist, aber eine davor liegende enge Stelle, sendet der Minkosten-Fluss zu viele Personen zu den beiden Ausgängen auf der linken Seite. </p>
       
       <p>Der Earliest-Arrival-Fluss erkennt die Engstelle und sendet deutlich weniger Personen zum rechten Ausgang und erreicht somit eine deutlich geringere Entfluchtungszeit.</p>
+    </div>
+    <div class="col-md-4">      
+      <img src="{{ base }}image/content/icem09/exit-assignments-experiments-shared-bottlenecks-results.png" width="100%"/>
     </div>
 
     <div class="col-md-3">

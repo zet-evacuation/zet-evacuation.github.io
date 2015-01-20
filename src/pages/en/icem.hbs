@@ -1,0 +1,229 @@
+﻿---
+title: ZET Evacuation Tool - Downloads
+base: ../
+lang: en
+---
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+  <div class="container">
+    <h1>Praxis</h1>
+    
+    <p>On this page you can find the files for the paper <a href="http://www.sciencedirect.com/science/article/pii/S1877705810004881">On the Use of Network Flow Techniques for Assigning Evacuees to Exits</a>, which was sent to the <b>First International Conference on Evacuation Modeling and Management (ICEM '09)</b> and provides downloads.</p>
+
+    <h2>Results</h2>
+    <p>The following scenarios have been used within the paper. The screenshots compare the different approaches for all cases and show the situation of the simulation at the same time.</p>
+  </div>
+</div>
+
+
+  <div class="jumbotron highlight">
+    <div class="container">
+      <h3>A simple example</h3>
+
+      <div class="row">
+        <div class="col-md-8">
+          <p>After 15 seconds it can be easily seen that in case of shortest paths considerably more persons stand in front of the narrow exit on the right side thus increasing the evacuation time. The other approaches give better results. </p>
+        </div>
+        <div class="col-md-4">      
+          <img src="{{ base }}image/content/icem09/exit-assignments-experiments-introduction-results.png" width="100%"/>
+        </div>
+      </div>
+
+      <div class="row top-buffer">
+        <div class="col-md-3">
+          <img src="{{ base }}image/content/icem09/introduction_sp.png" alt="Shortest Paths" title="Shortest Paths" width="100%"><br>
+          <span class="small"><a href="http://www.coga.tu-berlin.de/fileadmin/i26/Bilder_Webseite/AG_DiskAlg/FG_KombOptGraphAlg/projects/zet/icem09/videos/introduction-sp.avi">Play video</a></span>
+        </div>
+        <div class="col-md-3">
+          <img src="{{ base }}image/content/icem09/introduction_mcf.png" alt="Min Cost Flow" title="Min Cost Flow" width="100%">
+          <span class="small"><a href="http://www.coga.tu-berlin.de/fileadmin/i26/Bilder_Webseite/AG_DiskAlg/FG_KombOptGraphAlg/projects/zet/icem09/videos/introduction-mcf.avi">Play video</a></span>
+        </div>
+        <div class="col-md-3">
+          <img src="{{ base }}image/content/icem09/introduction_eat.png" alt="Earliest Arrival Transshipment" title="Earliest Arrival Transshipment" width="100%">
+          <span class="small"><a href="http://www.coga.tu-berlin.de/fileadmin/i26/Bilder_Webseite/AG_DiskAlg/FG_KombOptGraphAlg/projects/zet/icem09/videos/introduction-eat.avi">Play video</a></span>
+        </div>
+        <div class="col-md-3">
+          <img src="{{ base }}image/content/icem09/introduction_brd.png" alt="Best Response Dynamics" title="Best Response Dynamics" width="100%">
+          <span class="small"><a href="http://www.coga.tu-berlin.de/fileadmin/i26/Bilder_Webseite/AG_DiskAlg/FG_KombOptGraphAlg/projects/zet/icem09/videos/introduction-brd.avi">Play video</a></span>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+<div class="jumbotron">
+  <div class="container">
+    <h3>A bad example for min cost flows 1: far away exits</h3>
+    <div class="row">
+      <div class="col-md-8">
+        <p>It is not necessary that evacuees use the left exit for evacuation as the hole width of the corridor works as an exit. In this case it is really the best idea to use the shortest path, what exactly corresponds to the earliest arrival flow. The min cost flow does not take the distance to the left exit into account and thus sends half of the people to the left exit. These people will arrive later than the evacuees on the right side need for evacuation.</p>
+        
+        <p>Also best response dynamics approach sends some evacuees to the left exit and thus can not find the optimal solution, but significantly less people are sent to the left exit.</p>
+      </div>
+      <div class="col-md-4">      
+        <img src="{{ base }}image/content/icem09/exit-assignments-experiments-introduction-results.png" width="100%"/>
+      </div>
+    </div>
+
+    <div class="row top-buffer">
+      <div class="col-md-3">
+        <img src="{{ base }}image/content/icem09/ffa_sp.png" alt="Shortest Paths" title="Shortest Paths" width="100%">
+        <span class="small"><a href="http://www.coga.tu-berlin.de/fileadmin/i26/Bilder_Webseite/AG_DiskAlg/FG_KombOptGraphAlg/projects/zet/icem09/videos/ffa-sp.avi">Play video</a></span>
+      </div>
+      <div class="col-md-3">
+        <img src="{{ base }}image/content/icem09/ffa_mcf.png" alt="Min Cost Flow" title="Min Cost Flow" width="100%">
+        <span class="small"><a href="http://www.coga.tu-berlin.de/fileadmin/i26/Bilder_Webseite/AG_DiskAlg/FG_KombOptGraphAlg/projects/zet/icem09/videos/ffa-mcf.avi">Play video</a></span>
+      </div>
+      <div class="col-md-3">
+        <img src="{{ base }}image/content/icem09/ffa_eat.png" alt="Earliest Arrival Transshipment" title="Earliest Arrival Transshipment" width="100%">
+        <span class="small"><a href="http://www.coga.tu-berlin.de/fileadmin/i26/Bilder_Webseite/AG_DiskAlg/FG_KombOptGraphAlg/projects/zet/icem09/videos/ffa-eat.avi">Play video</a></span>
+      </div>
+      <div class="col-md-3">
+        <img src="{{ base }}image/content/icem09/ffa_brd.png" alt="Best Response Dynamics" title="Best Response Dynamics" width="100%">
+        <span class="small"><a href="http://www.coga.tu-berlin.de/fileadmin/i26/Bilder_Webseite/AG_DiskAlg/FG_KombOptGraphAlg/projects/zet/icem09/videos/ffa-brd.avi">Play video</a></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+<div class="jumbotron highlight">
+  <div class="container">
+    <h3>A bad example for min cost flows 2: shared bottlenecks</h3>
+    <div class="col-md-8">
+      <p>It is bad to choose shortest paths in this scenario as the capacity of the exits on the left side is only a third of the capacity of the exits on the right side. As the bottleneck is not the exit itself gut a narrow point before, min cost flow sends to many evacuees to the exits on the left side.</p>
+      
+      <p>The earliest arrival flow detects the bottleneck and sends considerably less evacuees to the right exit which results to a decreased evacuation time.</p>
+    </div>
+    <div class="col-md-4">      
+      <img src="{{ base }}image/content/icem09/exit-assignments-experiments-shared-bottlenecks-results.png" width="100%"/>
+    </div>
+
+    <div class="col-md-3">
+      <img src="{{ base }}image/content/icem09/sb_sp.png" alt="Shortest Paths" title="Shortest Paths" width="100%">
+      <span class="small"><a href="ftp://ftp.math.tu-berlin.de/pub/combi/kappmeie/zet/icem09/sb-sp.avi">Download video</a></span>
+    </div>
+    <div class="col-md-3">
+      <img src="{{ base }}image/content/icem09/sb_mcf.png" alt="Min Cost Flow" title="Min Cost Flow" width="100%">
+      <span class="small"><a href="ftp://ftp.math.tu-berlin.de/pub/combi/kappmeie/zet/icem09/sb-mcf.avi">Download video</a></span>
+    </div>
+    <div class="col-md-3">
+      <img src="{{ base }}image/content/icem09/sb_eat.png" alt="Earliest Arrival Transshipment" title="Earliest Arrival Transshipment" width="100%">
+      <span class="small"><a href="ftp://ftp.math.tu-berlin.de/pub/combi/kappmeie/zet/icem09/sb-eat.avi">Download video</a></span>
+    </div>
+    <div class="col-md-3">
+      <img src="{{ base }}image/content/icem09/sb_brd.png" alt="Best Response Dynamics" title="Best Response Dynamics" width="100%">
+      <span class="small"><a href="ftp://ftp.math.tu-berlin.de/pub/combi/kappmeie/zet/icem09/sb-brd.avi">Download video</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron">
+  <div class="container">
+    <h3>A bad example for earliest arrival flows: narrow shortest paths</h3>
+    <div class="row top-buffer">
+      <div class="col-md-7">
+        <p>Assuming that evacuees, that have exits they should use assigned, always use shortest paths, the earliest arrival flow gives also bad results. In this case many evacuees should walk around an obstacle but the most peoply stay in front of the obstacle and wait until it gets free. </p>
+        
+        <p>In this particular example the differences are not very distinct, but it can be seen that min cost flow sends more evacuees to the right exit.</p>
+      </div>
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-4">      
+        <img src="{{ base }}image/content/icem09/exit-assignments-experiments-pillar-results.svg" width="100%"/>
+      </div>
+    </div>
+
+    <div class="row top-buffer">
+      <div class="col-md-3">
+        <img src="{{ base }}image/content/icem09/pillar_sp.png" alt="Shortest Paths" title="Shortest Paths" width="100%">
+        <span class="small"><a href="http://www.coga.tu-berlin.de/fileadmin/i26/Bilder_Webseite/AG_DiskAlg/FG_KombOptGraphAlg/projects/zet/icem09/videos/pillar-sp.avi">Play video</a></span>
+      </div>
+      <div class="col-md-3">
+        <img src="{{ base }}image/content/icem09/pillar_mcf.png" alt="Min Cost Flow" title="Min Cost Flow" width="100%">
+        <span class="small"><a href="http://www.coga.tu-berlin.de/fileadmin/i26/Bilder_Webseite/AG_DiskAlg/FG_KombOptGraphAlg/projects/zet/icem09/videos/pillar-mcf.avi">Play video</a></span>
+      </div>
+      <div class="col-md-3">
+        <img src="{{ base }}image/content/icem09/pillar_eat.png" alt="Earliest Arrival Transshipment" title="Earliest Arrival Transshipment" width="100%">
+        <span class="small"><a href="http://www.coga.tu-berlin.de/fileadmin/i26/Bilder_Webseite/AG_DiskAlg/FG_KombOptGraphAlg/projects/zet/icem09/videos/pillar-eat.avi">Play video</a></span>
+      </div>
+      <div class="col-md-3">
+        <img src="{{ base }}image/content/icem09/pillar_brd.png" alt="Best Response Dynamics" title="Best Response Dynamics" width="100%">
+        <span class="small"><a href="http://www.coga.tu-berlin.de/fileadmin/i26/Bilder_Webseite/AG_DiskAlg/FG_KombOptGraphAlg/projects/zet/icem09/videos/pillar-brd.avi">Play video</a></span>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+<div class="jumbotron">
+  <div class="container">
+    <h2>Downloads</h2>
+    
+    <h3>Journal article</h3>
+    <table class="table table-striped">  
+      <tr><th>On the Use of Network Flow Techniques for Assigning Evacuees to Exits</th><th></th></tr>
+      <tr><td><a href="http://www.redaktion.tu-berlin.de/fileadmin/i26/download/AG_DiskAlg/FG_KombOptGraphAlg/paper/2010/DresslerGrossKappmeier_2010.pdf" class="download">Article</a> <td>pdf, 1,04 MiB</td></td></tr>
+      <tr><td><a href="http://www.coga.tu-berlin.de/fileadmin/i26/download/AG_DiskAlg/FG_KombOptGraphAlg/kappmeier/talks/ICEM_2009_Kappmeier.pdf" class="download">Conference slildes</a><td>pdf, 1,00 MiB</td></td></tr>
+    </table>
+
+    
+    <h3>Instances</h3>
+    
+    <h3>Videos</h3>
+    
+    <div class="col-md-12">
+      <p>Here you can find videos for all the examples showing all implemented approaches. The videos have a resolution of 1280x800 (16:10) and are coded in DivX 5 format. The file format is avi. </p>
+      <table class="table table-striped">  
+        <tr><th>A simple example</th><th></th></tr>
+
+        <tr><td><a href="ftp://ftp.math.tu-berlin.de/pub/combi/kappmeie/zet/icem09/introduction-sp.avi" class="download">Shortest paths</a><td>avi, 18,6 MiB</td></td></tr>
+
+        <tr><td><a href="ftp://ftp.math.tu-berlin.de/pub/combi/kappmeie/zet/icem09/introduction-mcf.avi" class="download">Min cost flow</a><td>avi, 14,9 MiB</td></td></tr>
+
+        <tr><td><a href="ftp://ftp.math.tu-berlin.de/pub/combi/kappmeie/zet/icem09/introduction-eat.avi" class="download">Earliest arrival flow</a><td>avi, 14,8 MiB</td></td></tr>
+
+        <tr><td><a href="ftp://ftp.math.tu-berlin.de/pub/combi/kappmeie/zet/icem09/introduction-brd.avi" class="download">Best response dynamics</a><td>avi, 14,2 MiB</td></td></tr>
+
+        <tr><td></td><td>&nbsp;</td></tr>
+
+        <tr><th>A bad example for min cost flows 1: far away exits</th><th></th></tr>
+
+        <tr><td><a href="ftp://ftp.math.tu-berlin.de/pub/combi/kappmeie/zet/icem09/ffa-sp.avi" class="download">Shortest paths</a><td>avi, 12,1 MiB</td></td></tr>
+
+        <tr><td><a href="ftp://ftp.math.tu-berlin.de/pub/combi/kappmeie/zet/icem09/ffa-mcf.avi" class="download">Min cost flow</a><td>avi, 16,5 MiB</td></td></tr>
+
+        <tr><td><a href="ftp://ftp.math.tu-berlin.de/pub/combi/kappmeie/zet/icem09/ffa-eat.avi" class="download">Earliest arrival flow</a><td>avi, 12,3 MiB</td></td></tr>
+
+        <tr><td><a href="ftp://ftp.math.tu-berlin.de/pub/combi/kappmeie/zet/icem09/ffa-brd.avi" class="download">Best response dynamics</a><td>avi, 13,2 MiB</td></td></tr>
+
+        <tr><td></td><td>&nbsp;</td></tr>
+
+        <tr><th>A bad example for min cost flows 2: shared bottlenecks</th><th></th></tr>
+
+        <tr><td><a href="ftp://ftp.math.tu-berlin.de/pub/combi/kappmeie/zet/icem09/sb-sp.avi" class="download">Shortest paths</a><td>avi, 27,7 MiB</td></td></tr>
+
+        <tr><td><a href="ftp://ftp.math.tu-berlin.de/pub/combi/kappmeie/zet/icem09/sb-mcf.avi" class="download">Min cost flow</a><td>avi, 25,9 MiB</td></td></tr>
+
+        <tr><td><a href="ftp://ftp.math.tu-berlin.de/pub/combi/kappmeie/zet/icem09/sb-eat.avi" class="download">Earliest arrival flow</a><td>avi, 21,5 MiB</td></td></tr>
+
+        <tr><td><a href="ftp://ftp.math.tu-berlin.de/pub/combi/kappmeie/zet/icem09/sb-brd.avi" class="download">Best response dynamics</a><td>avi, 25,8 MiB</td></td></tr>
+
+        <tr><td></td><td>&nbsp;</td></tr>
+
+        <tr><th>A bad example for earliest arrival flows: narrow shortest paths</th><th></th></tr>
+
+        <tr><td><a href="ftp://ftp.math.tu-berlin.de/pub/combi/kappmeie/zet/icem09/pillar-sp.avi" class="download">Shortest paths</a><td>avi, 18,9 MiB</td></td></tr>
+
+        <tr><td><a href="ftp://ftp.math.tu-berlin.de/pub/combi/kappmeie/zet/icem09/introduction-mcf.avi" class="download">Min cost flow</a><td>avi, 14,9 MiB</td></td></tr>
+
+        <tr><td><a href="ftp://ftp.math.tu-berlin.de/pub/combi/kappmeie/zet/icem09/pillar-eat.avi" class="download">Earliest arrival flow</a><td>avi, 19,0 MiB</td></td></tr>
+
+        <tr><td><a href="ftp://ftp.math.tu-berlin.de/pub/combi/kappmeie/zet/icem09/pillar-brd.avi" class="download">Best response dynamics</a><td>avi, 17,6 MiB</td></td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+      
