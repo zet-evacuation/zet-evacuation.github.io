@@ -12,12 +12,24 @@ module.exports = function(grunt) {
           ext: '.min.css'
         }]
       }
+    },
+    assemble: {
+        options: {
+            layout: "src/layouts/default.hbs",
+            flatten: true
+        },
+        pages: {
+            files: {
+                './': ['src/pages/*.hbs']
+            }
+        }
     }
   });
 
   // Load plugins
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-
+  grunt.loadNpmTasks('assemble');
+    
   // Default task(s).
-  grunt.registerTask('default', ['cssmin']);
+  grunt.registerTask('default', ['cssmin', 'assemble']);
 };

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/zet-evacuation/zet-evacuation.github.io",
   "devDependencies": {
+    "assemble": "^0.4.42",
     "grunt": ">=0.4.0",
     "grunt-contrib-cssmin": "^0.11.0"
   }
